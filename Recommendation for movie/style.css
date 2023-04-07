@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  h1,h4 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .form-container {
+    margin-bottom: 2em;
+  }
+  #input1,#input2,#input3,.star-rating, #modal-content{
+    display: flex;
+  }
+  #input1,.star-rating{
+    justify-content: center;
+    align-items: center;
+  }
+  #input2,#input3 {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .star-rating{
+    gap:1rem;
+    padding: 1rem;
+
+  }
+  label {
+    margin-right: 10px;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: #bb3;
+  }
+  
+  button[type="submit"]:active {
+    background-color: #db9;
+  }
+  
+  select, button[type="submit"] {
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  select{
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .checked {
+    color: orange;
+  }
+  
+  .modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+#modal-content, #display-div{
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 600px;
+  height: 40vh;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+
+}
+#display-div{
+  display: none;
+  align-items: center;
+}
+#modal-close-btn,#display-div-btn {
+  align-self: flex-end;
+}
+#modal-content{
+  text-align: center;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 50vh;
+}
