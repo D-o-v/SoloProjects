@@ -1,0 +1,2 @@
+# SoloProjects
+for solo projects
